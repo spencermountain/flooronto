@@ -1,0 +1,25 @@
+{
+  "name": "flooronto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "download": "node scripts/download.js",
+    "convert": "node scripts/convert.js",
+    "queries": "node src/queries.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.5.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "@duckdb/node-api": "1.5.4-r.1"
+  }
+}
