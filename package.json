@@ -1,25 +1,22 @@
 {
   "name": "flooronto",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "toronto geojson in parquet",
   "main": "index.js",
+  "repository": "github:spencermountain/flooronto",
   "scripts": {
     "download": "node scripts/download.js",
     "convert": "node scripts/convert.js",
-    "queries": "node src/queries.js"
+    "queries": "node src/queries.js",
+    "lint": "eslint ."
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.5.0",
-      "onFail": "download"
-    }
-  },
+  "author": "Spencer Kelly <spencermountain@gmail.com> (https://spencermountain.dev)",
+  "license": "MIT",
+  "packageManager": "pnpm@11.5.0",
   "type": "module",
   "dependencies": {
-    "@duckdb/node-api": "1.5.4-r.1"
+    "@duckdb/node-api": "1.5.4-r.1",
+    "eslint": "10.10.0"
   }
 }
