@@ -1,9 +1,10 @@
+/* eslint-disable no-console */
+
 import { DuckDBInstance } from '@duckdb/node-api'
 
 const parquet = 'toronto.parquet'
 
 const examples = {
-
   'element counts by kind': `
     SELECT kind, count(*) AS n
     FROM '${parquet}'
@@ -59,8 +60,7 @@ const examples = {
       AND lat BETWEEN 43.653 AND 43.659
       AND lon BETWEEN -79.384 AND -79.377
     ORDER BY name
-  `,
-
+  `
 }
 
 const instance = await DuckDBInstance.create()

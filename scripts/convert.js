@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import { DuckDBInstance } from '@duckdb/node-api'
 
 const input = 'toronto-extract.osm.pbf'
